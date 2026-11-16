@@ -14,13 +14,14 @@ PINNED_COMMIT="5863806dd4e15c63174bee4e7515a4256792ecfa"
 COMMIT="${1:-$PINNED_COMMIT}"
 
 # Upstream path -> pack skill name (the folder name is kept).
+# `implement` is left out on purpose: the pack always builds with implement-spec.
+# Pack-owned skills (skills/feature-flow) are not in this list and are never touched.
 INCLUDE="
 engineering/setup-matt-pocock-skills
 engineering/ask-matt
 engineering/grill-with-docs
 engineering/to-spec
 engineering/to-tickets
-engineering/implement
 engineering/implement-spec
 engineering/code-review
 engineering/retro
